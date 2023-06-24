@@ -16,7 +16,7 @@ section{
 }
 .card {
   max-width: 24rem;
-  height: 36rem;
+  max-height: 36rem;
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
@@ -32,11 +32,11 @@ section{
 .card-text {
   position: absolute;
   top: 350px;
-  max-width: 400px;
+  max-width: 80%;
   color: #f0f0f0;
   padding: 20px;
   visibility: hidden;
-  transition: all ease.0.5s;
+  transition: all ease 0.5s;
 }
 .card-title {
   font-family: 'Roboto condensed', sans-serif;
