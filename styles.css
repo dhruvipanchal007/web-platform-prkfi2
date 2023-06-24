@@ -9,12 +9,18 @@ body {
   background-color: white;
 }
 
+section{
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
 .card {
   max-width: 24rem;
   height: 36rem;
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
+  
 
 }
 .card-img {
@@ -25,11 +31,12 @@ body {
 
 .card-text {
   position: absolute;
-  top: 300px;
+  top: 350px;
   max-width: 400px;
   color: #f0f0f0;
   padding: 20px;
-  display: none;
+  visibility: hidden;
+  transition: all ease.0.5s;
 }
 .card-title {
   font-family: 'Roboto condensed', sans-serif;
@@ -39,7 +46,9 @@ body {
 }
 .card-para {
   margin: 16px 0;
+  font-family: "roboto condensed",sans-serif;
+  color: #f0f0f0;
 }
-.card-img:hover{
-
+.card-img:hover~ .card-text{
+visibility: visible;
 }
